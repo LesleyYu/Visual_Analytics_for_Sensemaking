@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title>YLJ IDS Project - test</title>
+
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <!-- modernizr enables HTML5 elements and feature detects -->
+    <script type="text/javascript" src="../js/modernizr-1.5.min.js"></script>
+  </head>
+  <body>
+
+    <div id="main">
+      <header>
+        <div id="logo"><h1>EDIT<a href="#"> ATTRIBUTES</a></h1></div>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li class="current"><a href="edit.html">EDIT</a></li>
+            <li><a href="compare.html">COMPARE</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+    <div id="site_content">
+
+      <!-- Here is main content of index.html -->
+      <div id="content">
+        <h2> Scraping </h2>
+        <div>
+          <input type="button" value="scrape" id="scrape" />
+        </div>
+
+        <h2> URL list </h2>
+        <div>
+          <input type="button" value="Get URL" id="showURL" />
+        </div>
+        <div id="URLlist"></div>
+
+        <h2> get current URL </h2>
+        <div>
+          <input type="button" value="getCurr" id="getCurr" />
+        </div>
+        <script>
+          getCurrURL = document.querySelector('#getCurr');
+          getCurrURL.addEventListener("click", function() {
+            console.log(location.href)
+          })
+        </script>
+      </div>
+
+    </div>
+
+    <!-- The main footer that is used across all the pages of our website -->
+
+    <footer>
+      <p>©Copyright 2023 by Liujia. All rights reversed.</p>
+    </footer>
+
+    <!-- javascript at the bottom for fast page loading -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="application/javascript" src="../js/readLocalJSON.js"></script>
+    <script type="module" src="../js/web_scraping.js"></script>
+
+  </body>
+</html>

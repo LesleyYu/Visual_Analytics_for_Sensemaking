@@ -1,0 +1,71 @@
+{    
+      "data":[
+          {"id":1, "text":"Literature", "start_date":"12-10-2022", "duration":21, "order":10,
+              "progress":1, "open": true},
+          {"id":2, "text":"Search", "start_date":"12-10-2022", "duration":7,  "order":10,
+              "progress":1, "parent":1},
+          {"id":3, "text":"Review", "start_date":"19-10-2022", "duration":14,  "order":20,
+              "progress":1, "parent":1},
+
+          {"id":4, "text":"Design visual interface", "start_date":"01-11-2022", "duration":14, "order":10,
+              "progress":1},
+
+          {"id":5, "text":"Building user interface", "start_date":"15-11-2022", "duration":130, "order":10,
+              "progress":1, "open": true},
+          {"id":6, "text":"Build front-end structure", "start_date":"15-11-2022", "duration":28,  "order":10,
+              "progress":1, "parent":5},
+
+          {"id":20, "text":"NLP", "start_date":"19-11-2022", "duration":113,  "order":20,
+          "progress":1, "open": true},
+
+          {"id":8, "text":"Investigate NLP models", "start_date":"19-11-2022", "duration":20,  "order":20,
+              "progress":1, "parent":20},
+          {"id":9, "text":"Design NLP model", "start_date":"10-12-2022", "duration":20,  "order":20,
+          "progress":1, "parent":20},
+          {"id":10, "text":"apply NLP model", "start_date":"30-12-2022", "duration":20,  "order":20,
+          "progress":1, "parent":20},
+
+          {"id":11, "text":"data collection", "start_date":"10-01-2023", "duration":20,  "order":20,
+          "progress":1},
+          {"id":12, "text":"data preprocessing", "start_date":"30-01-2023", "duration":20,  "order":20,
+          "progress":1},
+
+          {"id":13, "text":"Integrate NLP model", "start_date":"20-02-2023", "duration":20,  "order":20,
+          "progress":1, "parent":20},
+
+          {"id":14, "text":"word-cloud", "start_date":"01-02-2023", "duration":12,  "order":20,
+          "progress":1, "parent":5},
+          {"id":15, "text":"data interface", "start_date":"14-02-2023", "duration":12,  "order":20,
+          "progress":1, "parent":5},
+          {"id":16, "text":"attrib ranking interface", "start_date":"01-03-2023", "duration":24,  "order":20,
+          "progress":1, "parent":5},
+
+          {"id":17, "text":"Correction and optimizing", "start_date":"27-03-2023", "duration":10,  "order":20,
+          "progress":1},
+          {"id":18, "text":"user evaluation", "start_date":"07-04-2023", "duration":10,  "order":20,
+          "progress":1},
+          {"id":19, "text":"final report", "start_date":"25-03-2023", "duration":32,  "order":20,
+          "progress":1}
+          
+      ],
+      "links":[
+          { "id":1, "source":1, "target":2, "type":"1"},
+          { "id":2, "source":2, "target":3, "type":"0"},
+          { "id":3, "source":3, "target":4, "type":"0"},
+          { "id":4, "source":4, "target":5, "type":"0"},
+          { "id":5, "source":5, "target":6, "type":"1"},
+
+          
+          { "id":6, "source":8, "target":9, "type":"0"},
+          { "id":7, "source":9, "target":10, "type":"0"},
+
+          { "id":8, "source":11, "target":12, "type":"0"},
+          { "id":9, "source":12, "target":13, "type":"0"},
+
+          { "id":10, "source":6, "target":14, "type":"0"},
+          { "id":11, "source":6, "target":15, "type":"0"},
+          { "id":12, "source":6, "target":16, "type":"0"},
+
+          { "id":13, "source":5, "target":17, "type":"0"}
+      ]
+    }

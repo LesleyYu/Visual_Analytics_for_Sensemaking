@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "CloudChoice",
+  "version": "1.0",
+  "description": "generates attribute ranking page with word cloud",
+  "author": "Liujia",
+  "permissions": [
+    "tabs", 
+    "activeTab", 
+    "declarativeContent", 
+    "storage", 
+    "contextMenus",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "<all_urls>",
+    "http://*/*",
+    "https://*/*",
+    "http://127.0.0.1:9222/*"
+  ],
+  "action": {
+    "default_popup": "pages/popup.html"
+  },
+  "icons": {
+    "16": "icon/logo16.png",
+    "32": "icon/logo32.png",
+    "48": "icon/logo48.png",
+    "128": "icon/logo128.png"
+  },
+  "background": {
+    "service_worker": "pages/background.js",
+    "type": "module"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}

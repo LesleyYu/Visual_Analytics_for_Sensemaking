@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title>YLJ IDS Project - EDIT</title>
+
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <!-- modernizr enables HTML5 elements and feature detects -->
+    <script type="text/javascript" src="../js/modernizr-1.5.min.js"></script>
+  </head>
+  <body>
+
+    <div id="main">
+      <header>
+        <div id="logo"><h1>EDIT<a href="#"> ATTRIBUTES</a></h1></div>
+        <nav>
+          <ul class="lavaLampWithImage" id="lava_menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="edit.html">EDIT</a></li>
+            <li class="current"><a href="compare.html">COMPARE</a></li>
+          </ul>
+          <!-- <button><a href="test.html">test_web_scraping</a></button> -->
+        </nav>
+      </header>
+
+
+    <div id="site_content">
+
+      <!-- Here is main content of index.html -->
+      <div id="content">
+        <h2>Edit the Attributes to Be Compared </h2>
+        <p> 👾 You can type in keywords and values directly. </p>
+        <p id="notNumber" class="warning"></p>
+        <p id="updateSuccess"></p>
+
+        <table>
+          <tr id="dataField">
+            <th></th>
+          </tr>
+        </table>
+      </div>
+      
+       <div id="word_cloud">
+        <h2> Word Cloud</h2>
+        <p> 🎃 Click on words to add into table as an attribute. </p>
+        <div id="my_canvas"></div>
+      </div>
+
+    </div>
+
+    <!-- The main footer that is used across all the pages of our website -->
+
+    <footer>
+      <p>©Copyright 2023 by Liujia. All rights reversed.</p>
+    </footer>
+
+    <!-- javascript at the bottom for fast page loading -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- data storage management -->
+    <script src="../bower_components/localStorageDB/localstoragedb.js"></script>
+    <script src="../js/storageData.js"></script>
+    <!-- word cloud -->
+    <script src="../bower_components/wordcloud/src/wordcloud2.js"></script>
+    <script src="../js/wordcloud/use_wc.js"></script>
+    <!-- lavalamp -->
+    <script type="text/javascript" src="../js/lavalamp/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/lavalamp/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../js/lavalamp/jquery.lavalamp.min.js"></script>
+    <script type="text/javascript" src="../js/lavalamp/jquery.menu.js"></script>
+
+  </body>
+</html>

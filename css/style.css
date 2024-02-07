@@ -1,0 +1,426 @@
+@font-face { 
+  font-family: News Cycle; 
+    src: url('../fonts/NewsCycle-Regular.eot'); 
+    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
+} 
+
+html { 
+  height: 100%;
+  min-width: 800px;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+}
+
+body { 
+  font: normal .85em arial, sans-serif;
+  background: #F5F5F5 url(../images/pattern.png);
+  color: #444;
+  padding-bottom: 40px;
+}
+
+p { 
+  padding: 0 0 10px 0;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font: normal 200% 'News Cycle', arial, sans-serif;
+  color: #222;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+}
+
+h1 { 
+  text-shadow: 1px 1px #FFF;
+}
+
+h2 { 
+  font: normal 170% 'News Cycle', arial, sans-serif;
+  color: #666;  
+  margin: 0;
+  padding: 0 0 8px 0;
+}
+
+h3 { 
+  font: normal 125% 'trebuchet ms', arial, sans-serif;
+}
+
+h4, h5, h6 { 
+  margin: 0;
+  padding: 0 0 5px 0;
+  font: normal 110% arial, sans-serif;
+  color: #999;
+  line-height: 1.5em;
+}
+
+h5, h6 { 
+  font: italic 95% arial, sans-serif;
+  color: #888;
+  padding-bottom: 15px;
+}
+
+h6 { 
+  color: #362C20;
+}
+
+a, a:hover { 
+  outline: none;
+  text-decoration: none;
+  color: #00B7EC;
+}
+
+a:hover { 
+  text-decoration: underline;
+  color: #00B7EC;
+}
+
+ul { 
+  margin: 02px 0 22px 17px;
+}
+
+ul li { 
+  list-style-type: circle;
+  margin: 0 0 0 0; 
+  padding: 0 0 4px 5px;
+}
+
+ol { 
+  margin: 8px 0 22px 20px;
+}
+
+ol li { 
+  margin: 0 0 11px 0;
+}
+
+#main, header, #logo_edit, #logo_disp, nav, #edit, #compare, footer, #word_cloud { 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.logo_hidden {
+  display: none;
+}
+
+.logo_show {
+  display: block;
+}
+
+#main { 
+  /* width: 600px; */
+  margin: 0px auto 0 auto;
+}
+
+header { 
+  /* width: 550px; */
+  margin-left: 5%;
+  height: 105px;
+}
+
+#logo, #logo_edit, #logo_disp { 
+  /* width: 320px; */
+  float: left;
+  height: 100px;
+  background: transparent;
+  padding: 0 0 10px 10px;
+}
+
+#logo h1, #logo_edit h1, #logo_disp h1 { 
+  font: normal 330% 'News Cycle', arial, sans-serif;
+  padding: 30px 0 0 17px;
+  color: #222;
+  letter-spacing: -2px;
+}
+
+#logo h1 a, #logo_edit h1 a, #logo_disp h1 a { 
+  color: #999;
+  text-decoration: none;
+}
+
+#logo h1 a:hover, #logo_edit h1 a:hover, #logo_disp h1 a:hover { 
+  color: #222;
+  text-decoration: none;
+}
+
+nav { 
+  height: 26px;
+  /* width: 300px; */
+  margin: 1px 5% 0 auto;
+  float: right;
+  padding: 35px 0 0 0;
+} 
+
+#site_content, #edit, #compare { 
+  /* width: 550px; */
+  overflow: auto;
+  margin: 8px auto 0 auto;
+  padding: 0;
+  background: #eee;
+  border-top: 0;
+  border-bottom: 0;
+} 
+
+#content, #dataTable, #attribRanking { 
+  text-align: justify;
+  padding: 00px 30px 20px 30px;
+  margin: 0;
+  float: left;
+}
+
+#content ul , #dataTable ul { 
+  margin: 2px 0 4px 0px;
+}
+
+#content ul li, #dataTable ul li { 
+  list-style-type: none;
+  background: transparent url(../images/bullet.png) no-repeat left center;
+  margin: 0 0 0 0; 
+  padding: 2px 0 2px 28px;
+  line-height: 1.5em;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__content--active {
+  display: block;
+}
+
+
+/* -------- input label styling -------- */
+
+label {
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input[type="text"],
+label {
+  border: #F5F5F5;
+  background: transparent;
+}
+
+
+/* ---------------- table ---------------- */
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  /* letter-spacing: 0px; */
+  font-size: 0.8rem;
+  overflow: auto;
+  column-width: 15px;
+
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 3px 3px;
+  overflow: auto;
+  text-align: center;
+}
+
+td {
+  overflow: auto;
+}
+
+table tr:nth-child(1) {
+  background-color: #ddd;
+}
+table tr:last-child, table th:last-child {
+  background: #e8e8e8;
+}
+
+th > input#edit_attrib {
+  font-size: 13px;
+  color: #4d4d4d;
+}
+
+table th:first-child {
+  padding: 3px 0px;
+}
+
+    /* highlight hovering content */
+table tr:not(:first-child):not(:last-child):hover {
+  background-color: #e7efe7;
+}
+ table th:not(:last-child):not(:first-child):hover {   /* :not(:nth-last-child(2)) */
+  background-color: #e2e7e2;
+}
+th > input#edit_attrib:hover {
+  color:rgb(98, 108, 99);
+}
+td > input#edit_value:hover {
+  color:rgb(113, 124, 114);
+}
+
+
+tr:last-child th, tr:last-child td, td:last-child, table th:last-child {
+  font-size: smaller;
+  color:  rgb(126, 125, 125);
+}
+
+#addNewRow, #addNewCol {
+  border: none;
+  background: transparent;
+  font-size: 10px;
+  padding: 0 4px;
+}
+#addNewCol {
+  padding-top: 5px;
+}
+#addNewRow:hover, #addNewCol:hover {
+  color: rgb(98, 108, 99);
+}
+
+#notNumber {
+  color: rgb(154, 55, 55) ;
+}
+
+#updateSuccess {
+  color: green;
+}
+
+
+/* -------- word cloud styling -------- */
+
+#word_cloud {
+  display: block;
+  float: left;
+  text-align: justify;
+  padding: 00px 30px 20px 30px;
+}
+
+#my_canvas {
+  min-width: 600px;
+  height: 300px;
+  border: #b3b1b1 double;
+}
+
+
+/* ---------------- compare:  ---------------- */
+/* --------- attribute ranking bar chart ----------- */
+
+
+
+
+
+/* ---------------- footer ---------------- */
+
+footer { 
+  /* width: 550px; */
+  font: normal 120% 'News Cycle',  arial, sans-serif;
+  height: 45px;
+  padding: 20px 0 5px 0;
+  text-align: center; 
+  color: #222;
+  background: #D4D4D4;
+}
+
+footer p { 
+  padding: 0 0 10px 0;
+}
+
+footer a, footer a:hover { 
+  color: #222;
+  text-decoration: none;
+}
+
+footer a:hover { 
+  color: #FFF;
+  text-decoration: underline;
+}
+
+
+
+
+/* from here: http://www.gmarwaha.com/blog/2007/08/23/lavalamp-for-jquery-lovers */
+.lavaLampWithImage {
+  position: relative;
+  height: 25px;
+  padding: 15px 5px 15px 0;
+  margin: 10px 0 0 0;
+  overflow: visible;
+  float: right;
+}
+
+.lavaLampWithImage li {
+  float: left;
+  list-style: none;
+}
+
+.lavaLampWithImage li.back {
+  background: #DDD;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+  height: 28px;
+  z-index: 8;
+  position: absolute;
+}
+
+.lavaLampWithImage li a, .lavaLampWithImage li button {
+  font: normal 130% 'News Cycle', sans-serif;
+  border: none;
+  background: transparent;
+  text-shadow:1px 1px #FFF;
+  text-decoration: none;
+  color: #222;
+  outline: none;
+  text-align: center;
+  letter-spacing: 0;
+  z-index: 10;
+  display: block;
+  float: left;
+  height: 30px;
+  padding: 0px 5px 0 5px;
+  position: relative;
+  overflow:visible;
+  margin: auto 10px;    
+}
+
+.lavaLampWithImage li a:hover, .lavaLampWithImage li a:active, .lavaLampWithImage li a:visited {
+  border: none;
+}
+
+@media (max-width:755px) {
+
+  .lavaLampWithImage {
+    height: 20px;
+    padding: 0;
+    margin: 10px 100px 0 0;
+  }
+  
+  .lavaLampWithImage li.back {
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 5px 10px 10px 10px;
+    height: 18px;
+    z-index: 8;
+  }
+  
+  .lavaLampWithImage li a, .lavaLampWithImage li button {
+    border: none;
+    background: transparent;
+    font: normal 90% 'News Cycle', sans-serif;
+    text-shadow:1px 1px #FFF;
+    height: 20px;
+    padding: 0px 3px 0 5px;
+    margin: auto 10px;    
+  }
+  
+}
+
+@media (max-width:668px) {
+
+  .lavaLampWithImage {
+    margin: 10px 150px 0 0;
+  }
+  
+}

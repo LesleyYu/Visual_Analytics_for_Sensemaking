@@ -1,0 +1,26 @@
+{
+  "name": "LiujiaDIS",
+  "version": "0.1.0",
+  "description": "generates attribute ranking page with word cloud",
+  "author": "Liujia.",
+  "authors": [
+    "Liujia Yu"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "localStorageDB": "https://github.com/knadh/localStorageDB.git",
+    "jquery": "~2.1.1",
+    "puppeteer": "https://github.com/puppeteer/puppeteer.git",
+    "wordcloud": "https://github.com/timdream/wordcloud2.js.git",
+    "d3": "~4.7.4"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
